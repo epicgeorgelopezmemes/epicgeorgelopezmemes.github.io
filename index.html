@@ -8,6 +8,8 @@
   <title>Ok, This is Epic</title>
   <link rel="shortcut icon" href="favicon.ico">
   <style media="screen">
+  @font-face { font-family: Oswald; src: url('Oswald-Regular.ttf'); }
+
     body {
 
       margin: 0;
@@ -34,7 +36,11 @@
       height: auto !important;
       width: 100vw;
     }
-    a:hover{text-shadow:0 0 5px black;color:white;}
+
+    a:hover {
+      text-shadow: 0 0 5px black;
+      color: gray;
+    }
 
     .vid {
       box-shadow: inset 0 0 100px 50px white;
@@ -45,29 +51,44 @@
       width: 100vw;
     }
 
+    header {
+      height: 70px;
+      width: 100vw;
+      top: 0;
+      position: fixed;
+    }
+
     li {
       list-style: none;
-      margin: 0;
+      margin: auto 10px;
     }
 
     a {
       text-decoration: none;
       text-align: center;
-      font-family: monospace;
-      font-size: 20px;
-      color: black;
+      font-family: Oswald;
+      font-size: 30px;
+      color: white;
+    }
+
+    li>a{text-transform: uppercase;}
+
+    ul {
+      display: flex;
+      flex-flow: row;
+      padding-left:0;
+      margin:0;
     }
 
     nav {
+      padding:16px;
       display: flex;
       position: absolute;
-      width: 200px;
-      right: 50px;
-      border-radius: 10px;
+      width: inherit;
+      justify-content: center;
       height: auto;
-      border: 5px solid orange;
-      box-shadow: 0 0 10px white;
-      background: linear-gradient(to bottom right, #aaaaaa, #ffffff);
+      box-shadow: 0 0 10px black;
+      background: linear-gradient(to bottom, #111111, black);
       opacity: 0.9;
     }
   </style>
@@ -75,14 +96,17 @@
 
 <body>
   <div class="content">
-    <nav>
-      <ul>
-        <li> <a href="https://www.facebook.com/epicgeorgelopezmemes">Epic</a></li>
-        <li> <a href="https://www.youtube.com/watch?v=1jviBKYyI1E">Cums</a></li>
-        <li> <a href="https://www.youtube.com/watch?v=1jviBKYyI1E">Data</a></li>
-        <li> <a href="https://www.pointblank.company">._</a></li>
-      </ul>
-    </nav>
+
+    <header>
+      <nav>
+        <ul>
+          <li> <a href="https://www.facebook.com/epicgeorgelopezmemes">Epic</a></li>
+          <li> <a href="https://www.youtube.com/watch?v=1jviBKYyI1E">Cums</a></li>
+          <li> <a href="https://www.youtube.com/watch?v=1jviBKYyI1E">Data</a></li>
+          <li> <a href="https://www.pointblank.company">Point_</a></li>
+        </ul>
+      </nav>
+    </header>
     <div class="vid">
       <video src="fuck.mp4" class="movie" loop autoplay poster="posterimage.jpg">
 
