@@ -8,7 +8,10 @@
   <title>Ok, This is Epic</title>
   <link rel="shortcut icon" href="favicon.ico">
   <style media="screen">
-  @font-face { font-family: Oswald; src: url('Oswald-Regular.ttf'); }
+    @font-face {
+      font-family: Oswald;
+      src: url('Oswald-Regular.ttf');
+    }
 
     body {
 
@@ -19,9 +22,9 @@
       height: 100vh;
       width: 100vw;
       background: url(garfield.png);
-      background-size: contain;
+      background-size: 50vw;
       background-repeat: no-repeat;
-      background-position: bottom;
+      background-position: bottom left;
       display: flex;
       flex-flow: column;
       justify-content: center;
@@ -52,41 +55,61 @@
     }
 
     header {
-      height: 70px;
-      width: 100vw;
+      height: 100vh;
+      width: 120px;
       top: 0;
+      right:0;
       position: fixed;
     }
 
     li {
       list-style: none;
       margin: auto 10px;
+      border-top:1px dotted white;
+      width:120px;
+      margin:0;left:0;
     }
 
     a {
       text-decoration: none;
-      text-align: center;
+      text-align: right;
       font-family: Oswald;
       font-size: 30px;
       color: white;
+
     }
 
-    li>a{text-transform: uppercase;}
+    nav>h3 {
+      left: 8px;
+      top: 0px;
+      position: fixed;
+      text-decoration: none;
+      text-align: right;
+      font-family: Oswald;
+      font-size: 30px;
+      color: darkgray;
+      text-transform: uppercase;
+    }
+
+    li>a {
+      padding:8px;
+      text-transform: uppercase;
+    }
 
     ul {
       display: flex;
-      flex-flow: row;
-      padding-left:0;
-      margin:0;
+      flex-flow: wrap;
+      padding-left: 0;
+      margin: 0;
     }
 
     nav {
-      padding:16px;
+      padding: 0px;
       display: flex;
       position: absolute;
       width: inherit;
       justify-content: center;
-      height: auto;
+      height: inherit;
       box-shadow: 0 0 10px black;
       background: linear-gradient(to bottom, #111111, black);
       opacity: 0.9;
@@ -99,6 +122,8 @@
 
     <header>
       <nav>
+        <h3>menu></h3>
+
         <ul>
           <li> <a href="https://www.facebook.com/epicgeorgelopezmemes">Epic</a></li>
           <li> <a href="https://www.youtube.com/watch?v=1jviBKYyI1E">Cums</a></li>
