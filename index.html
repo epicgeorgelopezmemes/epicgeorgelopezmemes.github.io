@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <!-- 
+<!--
     FILE AUTOSAVES
-    
-    ONCE YOU ARE DONE EDITING CLICK 
-    
-    'Upload files EGLM' 
-    
-    Navigate to the bottom link 
+
+    ONCE YOU ARE DONE EDITING CLICK
+
+    'Upload files EGLM'
+
+    Navigate to the bottom link
         on the left of the file expolorer
-        
+
     Select Index.html from file folder
-    
-    Scroll to bottom of screen, type in a 
-    
+
+    Scroll to bottom of screen, type in a
+
     𝕘𝕠𝕕𝕓𝕝𝕖𝕤𝕤
     -->
-    
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,128 +25,774 @@
   <meta name="description" content="Epic George Lopez Memes, Subsidiary of the Pointblank Company, Will always provide you with exceptional secretions, wonderous goop, stay afloat financially with Epic George Lopez Memes ®">
   <title>Ok, This is Epic George Lopez Memes</title>
   <link rel="shortcut icon" href="favicon.ico">
-  <style media="screen">
-    @font-face {
-      font-family: Oswald;
-      src: url('Oswald-Regular.ttf');
-    }
+  <link rel="stylesheet" href="style.css">
 
-    body {
+  <!-- Styles To Edit -->
+  <!-- Styles To Edit -->
+  <!-- Styles To Edit -->
 
-      margin: 0;
-    }
 
-    .content {
-      height: 100vh;
-      width: 100vw;
-      background: url(garfield.png);
-      background-size: 50vw;
-      background-repeat: no-repeat;
-      background-position: bottom left;
-      display: flex;
-      flex-flow: column;
-      justify-content: center;
-      z-index: 2;
-    }
-
-    .movie {
-      z-index: -10;
-      position: fixed;
-      top: 0;
-      mix-blend-mode: screen;
-      height: auto !important;
-      width: 100vw;
-    }
-
-    a:hover {
-      text-shadow: 0 0 5px black;
-      color: gray;
-    }
-
-    .vid {
-      box-shadow: inset 0 0 100px 50px white;
-      z-index: -9;
-      position: fixed;
-      top: 0;
-      height: 56.25vw;
-      width: 100vw;
-    }
-
-    header {
-      height: 100vh;
-      width: 120px;
-      top: 0;
-      right:0;
-      position: fixed;
-    }
-
-    li {
-      list-style: none;
-      margin: auto 10px;
-      border-top:1px dotted white;
-      width:120px;
-      margin:0;left:0;
-    }
-
-    a {
-      text-decoration: none;
-      text-align: right;
-      font-family: Oswald;
-      font-size: 30px;
-      color: white;
-
-    }
-
-    nav>h3 {
-      left: 8px;
-      top: 0px;
-      position: fixed;
-      text-decoration: none;
-      text-align: right;
-      font-family: Oswald;
-      font-size: 30px;
-      color: darkgray;
-      text-transform: uppercase;
-    }
-
-    li>a {
-      padding:8px;
-      text-transform: uppercase;
-    }
-
-    ul {
-      display: flex;
-      flex-flow: wrap;
-      padding-left: 0;
-      margin: 0;
-    }
-
-    nav {
-      padding: 0px;
-      display: flex;
-      position: absolute;
-      width: inherit;
-      justify-content: center;
-      height: inherit;
-      box-shadow: 0 0 10px black;
-      background: linear-gradient(to bottom, #111111, black);
-      opacity: 0.9;
-    }
-  </style>
 </head>
 
-<body>
-  <div class="content">
+<!-- Styles To Edit -->
 
+<body>
+
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .face {
+      transform: scale(0.4);
+      width: 350px;
+      height: 350px;
+      position: absolute;
+      right: -110px;
+      bottom: -50px;
+      margin: auto;
+      ff z-index: 0;
+      overflow: hidden;
+    }
+
+    #triangle-right {
+      position: absolute;
+      z-index: 999;
+      top: 244px;
+      left: 240px;
+    }
+
+    #triangle-left {
+      position: absolute;
+      z-index: 999;
+      top: 244px;
+      left: 110px;
+      transform: scaleX(-1);
+    }
+
+    .triangle1 {
+      width: 0;
+      height: 0;
+      border-left: 3px solid transparent;
+      border-right: 3px solid transparent;
+      border-top: 5px solid #010101;
+      position: absolute;
+      z-index: 999;
+    }
+
+    .triangle2 {
+      width: 0;
+      height: 0;
+      left: 12px;
+      top: 10px;
+      border-left: 3px solid transparent;
+      border-right: 3px solid transparent;
+      border-top: 5px solid #010101;
+      position: absolute;
+      z-index: 999;
+    }
+
+    .triangle3 {
+      width: 0;
+      height: 0;
+      left: 8px;
+      top: 22px;
+      border-left: 3px solid transparent;
+      border-right: 3px solid transparent;
+      border-top: 5px solid #010101;
+      position: absolute;
+      z-index: 999;
+    }
+
+    .eye.left {
+      position: absolute;
+      top: 38px;
+      left: 62px;
+      width: 110px;
+      height: 196px;
+      background: #fba919;
+      border-radius: 65% 35% 0% 55%/50% 15% 50% 50%;
+      border: 3px solid #010101;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .eye.left::after {
+      display: block;
+      position: relative;
+      width: 150px;
+      height: 210px;
+      content: "";
+      top: -50px;
+      left: 5px;
+      border: solid 3px #010101;
+      border-color: #000 transparent transparent transparent;
+      border-radius: 100px 100px 0% 0%/5%;
+      transform: rotate(185deg);
+    }
+
+    .eye.left::before {
+      content: "";
+      position: absolute;
+      top: 163px;
+      width: 150px;
+      height: 210px;
+      border-radius: 100px 100px 0% 0%/0%;
+      transform: rotate(5deg);
+      background: #fff;
+    }
+
+    .eyeball1 {
+      background-color: #010101;
+      display: block;
+      left: 83px;
+      content: "";
+      position: absolute;
+      top: 166px;
+      width: 24px;
+      height: 10px;
+      border-radius: 0% 0% 50% 50%/0 0 100% 100%;
+    }
+
+    .eyeball2 {
+      background-color: #010101;
+      display: block;
+      left: 3px;
+      position: absolute;
+      top: 166px;
+      width: 24px;
+      height: 10px;
+      border-radius: 0% 0% 50% 50%/0 0 100% 100%;
+      z-index: 1;
+    }
+
+    .eye.right::after {
+      display: block;
+      position: relative;
+      width: 150px;
+      height: 210px;
+      content: "";
+      top: -50px;
+      left: -25px;
+      border: solid 3px #010101;
+      border-color: #000 transparent transparent transparent;
+      border-radius: 100px 100px 0% 0%/5%;
+      transform: rotate(-185deg);
+    }
+
+    .eye.right::before {
+      content: "";
+      position: absolute;
+      top: 162px;
+      width: 150px;
+      height: 210px;
+      border-radius: 100px 100px 0% 0%/0%;
+      transform: rotate(-4deg);
+      background: #fff;
+    }
+
+    .eye.right {
+      position: absolute;
+      left: 175px;
+      top: 38px;
+      width: 110px;
+      height: 196px;
+      border-radius: 35% 65% 55% 0%/15% 50% 50% 50%;
+      background: #fba919;
+      border: 3px solid #010101;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .nose {
+      position: absolute;
+      top: 225px;
+      left: 150px;
+      width: 45px;
+      height: 25px;
+      background: #fbbfcb;
+      border-radius: 100%;
+      border: 3px solid #000200;
+      z-index: 1;
+    }
+
+    .snout1 {
+      width: 80px;
+      height: 50px;
+      background-color: #fffd78;
+      border: 3px solid #010101;
+      position: absolute;
+      top: 220px;
+      left: 80px;
+      border-right-color: transparent;
+      border-radius: 50%;
+      transform: rotate(-25deg);
+      border-top-left-radius: 100% 100%;
+      border-top-right-radius: 100% 40%;
+      border-bottom-left-radius: 100% 100%;
+      border-bottom-right-radius: 12% 100%;
+    }
+
+    .snout1small {
+      width: 60px;
+      height: 15px;
+      background-color: #fffd78;
+      position: absolute;
+      top: 255px;
+      left: 122px;
+      border-radius: 50%;
+      transform: rotate(140deg) scaleX(-1);
+      border-top-left-radius: 50% 100%;
+      border-top-right-radius: 0% 50%;
+      border-bottom-left-radius: 50% 100%;
+      border-bottom-right-radius: 0% 100%;
+      border-left: 3px solid #010101;
+      border-right-color: transparent;
+      border-top-color: transparent;
+      border-bottom-color: transparent;
+      overflow: hidden;
+    }
+
+    .snout2 {
+      width: 80px;
+      height: 50px;
+      background-color: #fffd78;
+      position: absolute;
+      top: 220px;
+      left: 185px;
+      border-radius: 50%;
+      transform: rotate(205deg);
+      border-top-left-radius: 100% 100%;
+      border-top-right-radius: 0% 100%;
+      border-bottom-left-radius: 100% 100%;
+      border-bottom-right-radius: 0% 100%;
+      border: 3px solid #010101;
+      border-right-color: transparent;
+    }
+
+    .snout2small {
+      width: 60px;
+      height: 15px;
+      background-color: #fffd78;
+      position: absolute;
+      top: 255px;
+      left: 165px;
+      border-radius: 50%;
+      transform: rotate(220deg);
+      border-top-left-radius: 50% 100%;
+      border-top-right-radius: 0% 50%;
+      border-bottom-left-radius: 50% 100%;
+      border-bottom-right-radius: 0% 100%;
+      border-left: 3px solid #010101;
+      border-right-color: transparent;
+      border-top-color: transparent;
+      border-bottom-color: transparent;
+      overflow: hidden;
+    }
+
+    .whisker8 {
+      transform: scaleX(-1) scale(0.7) rotate(30deg);
+      top: -145px;
+      left: 435px;
+      position: absolute;
+      z-index: 999;
+      -moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1) scale(0.7) rotate(30deg);
+      filter: FlipH;
+      -ms-filter: “FlipH”;
+    }
+
+    .whisker7 {
+      transform: scaleX(-1) rotate(5deg);
+      top: -85px;
+      left: 640px;
+      position: absolute;
+      z-index: 999;
+    }
+
+    .whisker6 {
+      transform: scaleX(-1) rotate(-15deg);
+      top: 100px;
+      left: 700px;
+      position: absolute;
+      z-index: 999;
+    }
+
+    .whisker5 {
+      transform: scaleX(-1) rotate(-45deg);
+      top: 375px;
+      left: 675px;
+      position: absolute;
+      z-index: 999;
+    }
+
+    .whisker4 {
+      transform: rotate(30deg) scale(0.7);
+      top: -145px;
+      left: -85px;
+      position: absolute;
+      z-index: 999;
+    }
+
+    .whisker3 {
+      transform: rotate(5deg);
+      top: -85px;
+      left: -290px;
+      position: absolute;
+      z-index: 999;
+    }
+
+    .whisker2 {
+      transform: rotate(-15deg);
+      top: 100px;
+      left: -350px;
+      position: absolute;
+      z-index: 999;
+    }
+
+    .whisker1 {
+      transform: rotate(-45deg);
+      top: 375px;
+      left: -325px;
+      position: absolute;
+      z-index: 999;
+    }
+
+    .stripes1 {
+      position: absolute;
+    }
+
+    .stripe1 {
+      width: 12px;
+      height: 40px;
+      border-top: 10px solid #010101;
+      background: #010101;
+      border-radius: 60px 0% 100% 100%/200px 0% 100% 100%;
+      position: absolute;
+      left: 319px;
+      top: 180px;
+      overflow: hidden;
+    }
+
+    .stripeA {
+      background-color: #010101;
+      display: block;
+      left: 320px;
+      position: absolute;
+      top: 225px;
+      width: 11px;
+      height: 10px;
+      border-radius: 0 0 50% 50%/0 0 100% 100%;
+      transform: rotate(355deg);
+    }
+
+    .stripes2 {
+      transform: scale(0.8);
+      position: absolute;
+      left: 78px;
+      top: 42px;
+    }
+
+    .stripe2 {
+      width: 12px;
+      height: 40px;
+      border-top: 10px solid #010101;
+      background: #010101;
+      border-radius: 60px 0% 100% 100%/200px 0% 100% 100%;
+      position: absolute;
+      left: 319px;
+      top: 180px;
+      overflow: hidden;
+    }
+
+    .stripeB {
+      background-color: #010101;
+      display: block;
+      left: 320px;
+      position: absolute;
+      top: 225px;
+      width: 11px;
+      height: 10px;
+      border-radius: 0 0 50% 50%/0 0 100% 100%;
+      transform: rotate(355deg);
+    }
+
+    .stripes3 {
+      transform: scale(0.6);
+      position: absolute;
+      left: 154px;
+      top: 84px;
+    }
+
+    .stripe3 {
+      width: 12px;
+      height: 40px;
+      border-top: 10px solid #010101;
+      background: #010101;
+      border-radius: 60px 0% 100% 100%/200px 0% 100% 100%;
+      position: absolute;
+      left: 319px;
+      top: 180px;
+      overflow: hidden;
+    }
+
+    .stripeC {
+      background-color: #010101;
+      display: block;
+      left: 320px;
+      position: absolute;
+      top: 225px;
+      width: 11px;
+      height: 10px;
+      border-radius: 0 0 50% 50%/0 0 100% 100%;
+      transform: rotate(355deg);
+    }
+
+    .stripes4 {
+      transform: scale(0.3);
+      position: absolute;
+      left: 260px;
+      top: 148px;
+    }
+
+    .stripe4 {
+      width: 12px;
+      height: 40px;
+      border-top: 10px solid #010101;
+      background: #010101;
+      border-radius: 60px 0% 100% 100%/200px 0% 100% 100%;
+      position: absolute;
+      left: 319px;
+      top: 180px;
+      overflow: hidden;
+    }
+
+    .stripeD {
+      background-color: #010101;
+      display: block;
+      left: 320px;
+      position: absolute;
+      top: 225px;
+      width: 11px;
+      height: 10px;
+      border-radius: 0 0 50% 50%/0 0 100% 100%;
+      transform: rotate(355deg);
+    }
+
+    .whisker.right {
+      transform: rotate(-1deg);
+      background: #010101;
+      width: 30px;
+      height: 3px;
+      position: absolute;
+      left: 20px;
+      border-top-right-radius: 50% 100%;
+      border-top-left-radius: 50% 100%;
+      border-bottom-left-radius: 50% 100%;
+      border-bottom-right-radius: 50% 100%;
+    }
+
+    .whisker.left {
+      transform: rotate(-1deg);
+      background: #010101;
+      width: 30px;
+      height: 3px;
+      position: absolute;
+      left: 20px;
+      border-top-right-radius: 50% 100%;
+      border-top-left-radius: 50% 100%;
+      border-bottom-left-radius: 50% 100%;
+      border-bottom-right-radius: 50% 100%;
+    }
+  </style>
+
+  <div class="face">
+
+    <div id="triangle-right">
+      <div class="triangle1"></div>
+      <div class="triangle2"></div>
+      <div class="triangle3"></div>
+    </div>
+
+    <div id="triangle-left">
+      <div class="triangle1"></div>
+      <div class="triangle2"></div>
+      <div class="triangle3"></div>
+    </div>
+
+    <div class="whisker1">
+      <div class="stripes1">
+        <div class="stripeA"></div>
+        <div class="stripe1"></div>
+      </div>
+
+      <div class="stripes2">
+        <div class="stripeB"></div>
+        <div class="stripe2"></div>
+      </div>
+
+      <div class="stripes3">
+        <div class="stripeC"></div>
+        <div class="stripe3"></div>
+      </div>
+
+      <div class="stripes4">
+        <div class="stripeD"></div>
+        <div class="stripe4"></div>
+      </div>
+    </div>
+
+    <div class="whisker2">
+      <div class="stripes1">
+        <div class="stripeA"></div>
+        <div class="stripe1"></div>
+      </div>
+
+      <div class="stripes2">
+        <div class="stripeB"></div>
+        <div class="stripe2"></div>
+      </div>
+
+      <div class="stripes3">
+        <div class="stripeC"></div>
+        <div class="stripe3"></div>
+      </div>
+
+      <div class="stripes4">
+        <div class="stripeD"></div>
+        <div class="stripe4"></div>
+      </div>
+    </div>
+
+    <div class="whisker3">
+      <div class="stripes1">
+        <div class="stripeA"></div>
+        <div class="stripe1"></div>
+      </div>
+
+      <div class="stripes2">
+        <div class="stripeB"></div>
+        <div class="stripe2"></div>
+      </div>
+
+      <div class="stripes3">
+        <div class="stripeC"></div>
+        <div class="stripe3"></div>
+      </div>
+
+      <div class="stripes4">
+        <div class="stripeD"></div>
+        <div class="stripe4"></div>
+      </div>
+    </div>
+
+    <div class="whisker4">
+      <div class="stripes1">
+        <div class="stripeA"></div>
+        <div class="stripe1"></div>
+      </div>
+
+      <div class="stripes2">
+        <div class="stripeB"></div>
+        <div class="stripe2"></div>
+      </div>
+
+      <div class="stripes3">
+        <div class="stripeC"></div>
+        <div class="stripe3"></div>
+      </div>
+
+    </div>
+
+    <div class="whisker5">
+      <div class="stripes1">
+        <div class="stripeA"></div>
+        <div class="stripe1"></div>
+      </div>
+
+      <div class="stripes2">
+        <div class="stripeB"></div>
+        <div class="stripe2"></div>
+      </div>
+
+      <div class="stripes3">
+        <div class="stripeC"></div>
+        <div class="stripe3"></div>
+      </div>
+
+      <div class="stripes4">
+        <div class="stripeD"></div>
+        <div class="stripe4"></div>
+      </div>
+    </div>
+
+    <div class="whisker6">
+      <div class="stripes1">
+        <div class="stripeA"></div>
+        <div class="stripe1"></div>
+      </div>
+
+      <div class="stripes2">
+        <div class="stripeB"></div>
+        <div class="stripe2"></div>
+      </div>
+
+      <div class="stripes3">
+        <div class="stripeC"></div>
+        <div class="stripe3"></div>
+      </div>
+
+      <div class="stripes4">
+        <div class="stripeD"></div>
+        <div class="stripe4"></div>
+      </div>
+    </div>
+
+    <div class="whisker7">
+      <div class="stripes1">
+        <div class="stripeA"></div>
+        <div class="stripe1"></div>
+      </div>
+
+      <div class="stripes2">
+        <div class="stripeB"></div>
+        <div class="stripe2"></div>
+      </div>
+
+      <div class="stripes3">
+        <div class="stripeC"></div>
+        <div class="stripe3"></div>
+      </div>
+
+      <div class="stripes4">
+        <div class="stripeD"></div>
+        <div class="stripe4"></div>
+      </div>
+    </div>
+
+    <div class="whisker8">
+      <div class="stripes1">
+        <div class="stripeA"></div>
+        <div class="stripe1"></div>
+      </div>
+
+      <div class="stripes2">
+        <div class="stripeB"></div>
+        <div class="stripe2"></div>
+      </div>
+
+      <div class="stripes3">
+        <div class="stripeC"></div>
+        <div class="stripe3"></div>
+      </div>
+
+    </div>
+
+    <div id="eyes">
+      <div class="eye left">
+        <div class="eyeball1"></div>
+      </div>
+      <div class="eye right">
+        <div class="eyeball2"></div>
+      </div>
+
+    </div>
+    <div class="nose"> </div>
+    <div class="mouth"> </div>
+    <div class="snout1"></div>
+    <div class="snout1small">
+      <div class="whisker left"></div>
+    </div>
+    <div class="snout2"></div>
+    <div class="snout2small">
+      <div class="whisker right"></div>
+    </div>
+
+  </div>
+
+  <div class="content">
+    <div class="manifesto">
+      <div class="ancientknowledge">
+        <!-- header -->
+        <h1>
+          Behold
+        </h1>
+        <!-- sub ehader -->
+
+        <h2>
+        Epic George Lopez Memes or "EGLM"
+        <br>
+        influenced by 1960s counterculture EGLM is a "revitalization movement" with many philosophies and practices
+        that have roots in historic utopian traditions of the mid–19th century.
+        </h2>
+
+        <h2>Values</h2>
+
+        <hr>
+        <!-- text -->
+        <h3>
+        EGLM has no official leaders (though plenty of leadership), no codified, strictly enforced or hierarchical
+        structure, no official spokespersons, no official documents, and no membership. Documents are produced only
+        as needed and maintained by various groups. The values held are love, peace, non-violence, environmentalism,
+        non-consumerism and non-commercialism, volunteerism, respect for others, consensus process, and multicultural
+        diversity.</h3>
+
+        <h2>Non-membership</h2>
+        <hr>
+        <h3>
+
+          There are no official leaders, no formal structure, no official
+          spokespersons, and no membership. Some EGLM family participants
+          make the claim that the family is a non-organization of non-members.
+          In addition to referring to itself as a non-organization, EGLM'S
+          "non-members" also playfully call the movement a "disorganization".
+          However, there is a changing network of "focalizers" who take
+          responsibility for passing on EGLM information year-round. In
+          EGLM lore you require only one thing to be a part of the Family,
+          a bellybutton.
+        </h3>
+        <br>
+        <h2 style="text-align:center;">Get involved</h2>
+        <hr>
+        <h3 style="text-align:center;">
+
+        Join a new organization, utilize discussion. Discover events
+        happening in your area. Record your progress and showcase your change
+
+        </h3>
+        <p>
+
+
+
+        </p>
+      </div>
+    </div>
     <header>
       <nav>
-        <h3>menu></h3>
 
         <ul>
-          <li> <a href="https://www.facebook.com/epicgeorgelopezmemes">Epic</a></li>
-          <li> <a href="https://www.youtube.com/watch?v=1jviBKYyI1E">Cums</a></li>
-          <li> <a href="https://www.youtube.com/watch?v=1jviBKYyI1E">Data</a></li>
-          <li> <a href="https://www.pointblank.company">Point_</a></li>
+          <!-- thanos car -->
+
+          <!--
+            (   (=* =)      (=*=)    )
+                        /            )
+                      C  ((
+              (       <-=->
+                    {{{{{}}}}}
+                  (((((())))))
+                      (()))
+-->
+
+
+          <!-- thanos car -->
+
+          <li> <a href="https://www.facebook.com/epicgeorgelopezmemes">Facebook</a></li>
+          <li> <a href="https://www.youtube.com/watch?v=1jviBKYyI1E">Art</a></li>
+          <li> <a href="https://www.youtube.com/watch?v=1jviBKYyI1E">The family</a></li>
+          <li> <a href="https://www.pointblank.company">Friends</a></li>
         </ul>
       </nav>
     </header>

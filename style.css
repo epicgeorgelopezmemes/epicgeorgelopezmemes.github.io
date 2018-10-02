@@ -1,0 +1,190 @@
+@font-face {
+  font-family: Oswald;
+  src: url('Oswald-Regular.ttf');
+}
+
+h1, h2, h3, h4, h5, p {
+  font-family: Oswald;
+}
+
+h3 {
+  word-wrap: break-word;
+}
+
+h2 {
+  line-height:
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+h1 {}
+
+body {
+  overflow: hidden;
+  margin: 0;
+}
+
+.content {
+  height: 100vh;
+  width: 100vw;
+  background: url(garfield.png);
+  background-size: 50vh;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  z-index: 2;
+}
+
+.movie {
+  z-index: -10;
+  position: fixed;
+  top: 0;
+  mix-blend-mode: screen;
+  height: auto !important;
+  width: 100vw;
+}
+
+a:hover {
+  text-shadow: 0 0 2px white;
+}
+
+li:hover {
+  transform: scale(120%);
+  box-shadow: 0 5px 1px black;
+}
+
+.vid {
+  box-shadow: inset 0 0 100px 50px white;
+  z-index: -9;
+  position: fixed;
+  top: 0;
+  height: 56.25vw;
+  width: 100vw;
+}
+
+header {
+  height: 100vh;
+  width: 200px;
+  top: 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  right: 0;
+  position: fixed;
+}
+
+li {
+  list-style: none;
+  margin: 5px;
+  border: 1px dotted black;
+  box-shadow: 0 0 0;
+  width: autos;
+  transform: scale(100%);
+  transition: box-shadow 1s, transform 1s ease;
+  left: 0;
+}
+
+a {
+  text-decoration: none;
+  text-align: right;
+  font-family: Oswald;
+  font-size: 30px;
+  color: unset;
+}
+
+li>a {
+  padding: 8px;
+  text-transform: uppercase;
+}
+
+ul {
+  display: flex;
+  flex-flow: wrap;
+  padding-left: 0;
+  margin: 0;
+}
+
+li:nth-child(odd) {
+  background-color: fbeea1;
+}
+
+li:nth-child(even) {
+  background-color: #f59e40;
+}
+
+li:nth-child(even) a {
+  color: #333333;
+}
+
+a:nth-child(odd) {
+  color: #333333;
+}
+
+nav {
+  padding: 10px;
+  display: flex;
+  position: absolute;
+  flex-flow: column;
+  width: auto;
+  justify-content: center;
+  height: auto;
+  border-radius: 3px;
+  box-shadow: 0 0 10px black;
+  background: linear-gradient(to bottom, #111111, black);
+  opacity: 0.9;
+}
+
+.manifesto {
+  width: auto;
+  max-width: 50vw;
+  min-width: 800px;
+  left: 20px !important;
+  top: 20px;
+  right: 215px;
+  position: relative;
+  border: 1px dotted black;
+  overflow-y: auto;
+  height: auto;
+}
+
+.ancientknowledge {
+  width: auto;
+  height: auto;
+  padding: 20px;
+}
+
+@media screen and (max-width:1250px) {
+  .content {
+    background-size: 30vh;
+  }
+  .ancientknowledge {bottom:20vh;
+}
+  nav{right:0;bottom:0;}
+  header {
+    height: 200px;
+    width: 100vw;
+    top: unset;
+    left: unset;
+    bottom: 0;
+    right: unset;
+  }
+  .manifesto {
+    width: auto;
+    max-width: 80vw;
+    min-width: 200px;
+    left: 20px !important;
+    top: 20px;
+    right: 215px;
+    bottom: 20vh !important;
+    position: relative;
+    border: 0px dotted black;
+    overflow-y: auto;
+    height: 75vh;
+    -webkit-overflow-scrolling: touch;
+  }
+}
